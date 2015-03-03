@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Adding colors to an array</title>
+	<link href="c_add.css" rel="stylesheet" />
+	<script type="text/javascript" src="c_add.js"></script>
+</head>
+<body>
+<section id="section">
+	<h1>The Color Adder</h1>
+	<form name="myColorForm">
+	<label for="myColor">Add a color:</label>
+	<select name="myColor">
+		<option value="red">Red</option>
+		<option value="blue">Blue</option>
+		<option value="green">Green</option>
+	</select>
+	<input type="button" value="Add" onclick="addToArray()" />
+	<input type="button" value="Subtract last color" onclick="subtractFromArray()" />
+	
+	</form>
+	
+	<div id="arrayBox">
+	</div>
+	
+	<h4>Click box for colors</h4>
+	<div id="colorBox" onclick="makeColors('colorBox')">
+	</div>
+	<!--
+	<div id="redirect" onclick="redirect()">Opnaðu fréttavef af handahófi</div>
+	-->
+	
+	
+</section>
+</body>
+</html>
